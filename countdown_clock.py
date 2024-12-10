@@ -80,6 +80,8 @@ while running:
 
     # Cập nhật phút và giây
     minutes = total_secs // 60
+    if( minutes >60):
+        total_secs=seconds
     seconds = total_secs % 60
 
     # Tạo lại các văn bản phút và giây
